@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Tracker with Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Heading Section -->
+  <header>
+    <h1>🏋️‍♀️ Workout Buddy Tracker</h1>
+    <p>Track your daily workouts and make your pet happy!</p>
+  </header>
+
+  <!-- Main Content Area -->
+  <div class="main-container">
+    
+      <!-- Side-by-side container -->
+    <div class="flex-container">
+      <!-- Pet Motivation Section -->
+      <section class="pet-section">
+        <div id="today-box">
+          <img id="pet-image" src="neutral.gif" alt="Your pet" />
+          <p id="motivation-text">Hello! Hope you feed me a workout today 🥕</p>
+        </div>
+      </section>
+      <!-- Workout Logging Section -->
+      
+      <section class="log-section">
+        <button onclick="logWorkout()">Done</button>
+        <button onclick="missedWorkout()">Not done</button>
+      </section>
+     
+    </div>
+      
+    <!-- Calendar Tracker Section -->
+    <section class="calendar">
+      <h2>Weekly Progress</h2>
+      <div id="weekly-view" class="calendar-grid"></div>
+
+      <h2>Monthly Progress</h2>
+      <div id="monthly-view" class="calendar-grid"></div>
+    </section>
+    
+    
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
